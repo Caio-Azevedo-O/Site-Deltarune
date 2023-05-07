@@ -157,9 +157,9 @@ p, h2, h1, ul, h3
 {
     background-color: rgb(0, 0, 0);
     width: max-content;
-    display: block;
+    display: grid;
     padding-left: 10px;
-    column-count: 1;
+    column-count: 2;
     height: fit-content;
 }
 #ralseihs
@@ -213,6 +213,7 @@ p, h2, h1, ul, h3
     border: #ff7124 solid 2px;
     color: #ff7124;
     font-family: deltar;
+    border-radius: 3px;
     background-color: black;
 }
 #agir:hover
@@ -223,9 +224,8 @@ p, h2, h1, ul, h3
 #krisimg
 {
     padding: 1px;
-    border: grey 1px solid;
+    border: rgb(194, 194, 194 1px) solid;
     border-radius: 2px;
-    margin-left: 50%;
     width: fit-content;
     height: fit-content;
 }
@@ -233,4 +233,21 @@ p, h2, h1, ul, h3
 {
     width: 30%;
     margin-right: 0%;
+}
+table
+{
+    text-align: center;
+    font-family: pixel3;
+    color: aliceblue;
+    border: rgb(194, 194, 194) 1px solid;
+}
+th
+{
+    width: 20%;
+    border: rgb(194, 194, 194) 1px solid;
+    background-color: rgb(29, 29, 29);
+}
+td
+{
+    border: rgb(194, 194, 194) 1px solid;
 }
