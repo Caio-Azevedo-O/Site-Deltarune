@@ -28,6 +28,9 @@ var npcs2 = document.getElementById("npcb")
 
 var contato = document.getElementById("contato")
 
+var navbar = document.getElementById("navbar")
+
+var sticky = navbar.offsetTop;
 
 var ktrue = true
 
@@ -54,7 +57,7 @@ function kris()
         btrue = true
         etrue = true
         nptrue = true
-        kris1.style.display = "block";
+        kris1.style.display = "grid";
         ralsei1.style.display = "none";
         susie1.style.display = "none";
         noelle1.style.display = "none";
@@ -76,7 +79,7 @@ function ralsei()
         etrue = true
         nptrue = true
         kris1.style.display = "none";
-        ralsei1.style.display = "block";
+        ralsei1.style.display = "grid";
         susie1.style.display = "none";
         noelle1.style.display = "none";
         berdly1.style.display = "none";
@@ -98,7 +101,7 @@ function susie()
         nptrue = true
         kris1.style.display = "none";
         ralsei1.style.display = "none";
-        susie1.style.display = "block";
+        susie1.style.display = "grid";
         noelle1.style.display = "none";
         berdly1.style.display = "none";
         enemies1.style.display = "none";
@@ -120,7 +123,7 @@ function noelle()
         kris1.style.display = "none";
         ralsei1.style.display = "none";
         susie1.style.display = "none";
-        noelle1.style.display = "block";
+        noelle1.style.display = "grid";
         berdly1.style.display = "none";
         enemies1.style.display = "none";
         npcs1.style.display = "none";
@@ -142,7 +145,7 @@ function berdly()
         ralsei1.style.display = "none";
         susie1.style.display = "none";
         noelle1.style.display = "none";
-        berdly1.style.display = "block";
+        berdly1.style.display = "grid";
         enemies1.style.display = "none";
         npcs1.style.display = "none";
     }
@@ -164,7 +167,7 @@ function enemies()
         susie1.style.display = "none";
         noelle1.style.display = "none";
         berdly1.style.display = "none";
-        enemies1.style.display = "block";
+        enemies1.style.display = "grid";
         npcs1.style.display = "none";
     }
 }
@@ -186,7 +189,7 @@ function npcs()
         noelle1.style.display = "none";
         berdly1.style.display = "none";
         enemies1.style.display = "none";
-        npcs1.style.display = "block";
+        npcs1.style.display = "grid";
     }
 }
 krisb.addEventListener("click", function onClick()
@@ -375,3 +378,18 @@ contato.addEventListener("click", function onClick()
 {
     window.open("contato.html")
 });
+
+function sticky()
+{
+    if (navbar.pageYOffset >= sticky)
+    {
+        navbar.style.boxShadow = "aliceblue"
+        navbar.classList.add("sticky")
+    }
+    else
+    {
+        navbar.style.boxShadow = "none"
+        navbar.classList.remove("sticky")
+    }
+}
+window.onscroll = sticky();
