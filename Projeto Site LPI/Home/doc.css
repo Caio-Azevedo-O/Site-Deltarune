@@ -1,0 +1,236 @@
+#boxhome
+{
+    width: 752px;
+    height: 500;
+    box-shadow: 0px, 0px, 11px, 11px rgba(173, 217, 255, 3);
+    border: aliceblue solid medium;
+}
+@font-face
+{
+    font-family: pixel3;
+    src: url(PixelGameFont.ttf);
+    /*Fonte customizada */
+}
+@font-face
+{
+    font-family: deltar;
+    src: url(undertale-deltarune-text-font-extended.ttf);
+}
+p, h2, h1, ul, h3
+{
+    font-family: pixel3;
+    color: aliceblue;
+    /* Muda a fonte e a cor dela */
+}
+.button
+{
+    color: aqua;
+    font-family: pixel3;
+    background-color: rgb(0, 0, 0);
+    height: 40px;
+    float: left;
+    border: rgb(0, 0, 0);
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    transition: all .35s;
+    /* da umas coisinhas pros meus botoes */
+}
+.button.sticky
+{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    /* n sei pq n funciona */
+}
+.delta
+{
+    width: 1500px;
+    padding: 50px;
+    margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    color: aliceblue;
+            
+}
+.texto1
+{
+    width: 1000px;
+    padding: 10px;
+    margin: 30px;
+    outline: solid aliceblue thick;
+}
+.titulo1
+{
+    font-family: pixel3;
+    color: aliceblue;
+}
+#div1
+{
+    column-count: 2;
+    width: 1725px;
+    padding: 50px;
+    outline: solid aliceblue thick;
+}
+#div2
+{
+    column-count: 2;
+    width: 1725px;
+    padding: 50px;
+    outline: aliceblue solid thick;
+}
+.texto1
+{
+    width: 30%;
+    padding: 50px;
+    margin-top: 100px;
+}
+.ref
+{
+    width: 750px;
+    padding: 50px;
+    margin: 200px;
+    outline: solid aliceblue thick;
+    align-items: center;
+    text-align: center;
+}
+.imagem
+{
+    align-items: center;
+    width: 500px;
+    padding: 50px;
+}
+.video
+{
+    width: 100px;
+    padding: auto;
+    margin: 0px;
+}
+#div1sob
+{
+    column-count: 2;
+    width: 93%;
+    padding: 25px;
+    outline: aliceblue solid thick;
+    margin: 1%;
+}
+#Botoes
+{
+    width: 101%;
+    background-color: rgb(0, 0, 0);
+    height: 40px;
+    margin-left: -0.5%;
+}
+.button:hover
+{
+    box-shadow: 0px 0px 38px 3px #00e1ff;
+    background-image: linear-gradient(cornflowerblue, cyan);
+    color: aliceblue;
+}
+.button:hover:after
+{
+    background-color: rgb(0, 0, 0);
+    transition: all .50s;
+}
+.wrapper
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#Sprites_e_Info
+{
+    margin: 5%;
+    background-color: rgb(0, 0, 0);
+    height: max-content;
+}
+.butao2
+{
+    height: 40px;
+    float: left;
+    background-color: rgb(0, 0, 0);
+    border: rgb(0, 0, 0);
+    font-family: pixel3;
+    color:rgb(36, 255, 255);
+}
+#krishs
+{
+    background-color: rgb(0, 0, 0);
+    width: max-content;
+    display: block;
+    padding-left: 10px;
+    column-count: 1;
+    height: fit-content;
+}
+#ralseihs
+{
+    background-color: rgb(0, 0, 0);
+    width: max-content;
+    display: none;
+}
+#susiehs
+{
+    background-color: rgb(0, 0, 0);
+    width: max-content;
+    display: none;
+}
+#noellehs
+{
+    background-color: rgb(0, 0, 0);
+    width: max-content;
+    display: none;
+}
+#berdlyhs
+{
+    background-color: rgb(0, 0, 0);
+    width: max-content;
+    display: none;
+}
+#enemieshs
+{
+    background-color: rgb(0, 0, 0);
+    width: max-content;
+    display: none;
+}
+#npcshs
+{
+    background-color: rgb(0, 0, 0);
+    width: max-content;
+    display: none;
+}
+#contato
+{
+    margin-left: 87%;
+}
+#steam
+{
+    margin-left: 43%;
+    width: 100px;
+    border-radius: 5px;
+}
+#agir
+{
+    border: #ff7124 solid 2px;
+    color: #ff7124;
+    font-family: deltar;
+    background-color: black;
+}
+#agir:hover
+{
+    border: yellow solid 2px;
+    color: yellow;
+}
+#krisimg
+{
+    padding: 1px;
+    border: grey 1px solid;
+    border-radius: 2px;
+    margin-left: 50%;
+    width: fit-content;
+    height: fit-content;
+}
+#krisinfo
+{
+    width: 30%;
+    margin-right: 0%;
+}

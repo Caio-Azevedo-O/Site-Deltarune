@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deltarune</title>
+    <link rel="icon" type="image/x-icon" href="Home/favicon.png">
+    <link rel="stylesheet" href="Home/doc.css">
+    <script src="https://kit.fontawesome.com/e5531e1bd1.js" crossorigin="anonymous"></script>
+    <style>
+        body
+        {
+            background-image: url(Personagem/back\ img.png);
+            /*Coloca uma imagem no fundo do site*/
+        }
+        #krisb
+        {
+            color: rgb(239, 255, 17);
+            border-bottom: 2px solid rgb(239, 255, 17);
+        }
+        #ralseib
+        {
+            color: rgb(36, 255, 255);
+            border-bottom: 2px solid rgb(0, 0, 0);
+        }
+        #susieb
+        {
+            color: rgb(36, 255, 255);
+            border-bottom: 2px solid rgb(0, 0, 0);
+        }
+        #noelleb
+        {
+            color: rgb(36, 255, 255);
+            border-bottom: 2px solid rgb(0, 0, 0);
+        }
+        #berdlyb
+        {
+            color: rgb(36, 255, 255);
+            border-bottom: 2px solid rgb(0, 0, 0);
+        }
+        #enemiesb
+        {
+            color: rgb(36, 255, 255);
+            border-bottom: 2px solid rgb(0, 0, 0);
+        }
+        #npcb
+        {
+            color: rgb(36, 255, 255);
+            border-bottom: 2px solid rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div id="Botoes">
+            <a href="home.html"><button type="button", class="button"><span><i class="fa-solid fa-house"></i></span></button></a>
+            <a href="personagem.html"><button type="button", class="button"><span>Personagem</span></button></a>
+            <a href="sobre.html"><button type="button", class="button"><span>Sobre</span></button></a>
+            <a href="contato.html"><button type="button", class="button" id="contato" onclick=""><span>Contato</span></button></a>
+            <!--Codigo que conecta as outras paginas-->
+        </div>
+    </nav>
+    <header>
+        <div id="Sprites_e_Info">
+            <button onclick="kris()" type="button" class="butao2" id="krisb">Kris</button>
+            <button onclick="ralsei()" type="button" class="butao2" id="ralseib">Ralsei</button>
+            <button onclick="susie()" type="button" class="butao2" id="susieb">Susie</button>
+            <button onclick="noelle()" type="button" class="butao2" id="noelleb">Noelle</button>
+            <button onclick="berdly()" type="button" class="butao2" id="berdlyb">Berdly</button>
+            <button onclick="enemies()" type="button" class="butao2" id="enemiesb">Enemies</button>
+            <button onclick="npcs()" type="button" class="butao2" id="npcb">NPCS</button>
+            <div id="krishs" style="display: block;">
+                <div id="krisinfo">
+                    <br>
+                    <h1>
+                        Kris
+                    </h1>
+                    <br>
+                    <br>
+                    <p>
+                        Kris é um humano, um "Lightner" e o protagonista da história. O cavaleiro da profecia da runa delta, e o líder da party que você controla em delarune.
+                        <br>
+                        Controlado pelo player pela maior parte do jogo, exeto em algumas partes específicas que contribuem ao plot do jogo.
+                        <br>
+                        Nas batalhas, Kris é ótimo em <button type="button" id="agir">ACT</button> ou agir, e dependendo das escolhas que o player fizer em agir pode mudar o rumo da história.
+                    </p>
+                    <h2>
+                        História
+                    </h2>
+                    <p>
+                        Kris foi adotado pela família Dreemurr, sua família é Toriel Dreemurr(Mãe), Asgore Dreemurr(Pai), e Asriel Dreemurr(irmão). Kris é o primeiro personagem a ser mostrado, e é controlado pelo player.
+                    </p>
+                    <h2>
+                        Combate
+                    </h2>
+                    <h3>
+                        Status
+                    </h3>
+                    <table>
+                        <theader>
+                            <tr>
+
+                            </tr>
+                        </theader>
+                        <tbody>
+                            <tr>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h3>
+                        Atos
+                    </h3>
+                    <p>
+                        Como Kris é humano, diferente dos outros personagens ele não consegue conjurar feitiços. porém, o <button type="button" id="agir">ACT</button> é extremamente poderoso. A maioria dos <button type="button" id="agir">ACT</button> não necessitam de TP(Tension Points), mas os que irei mencionar aqui necessitam.
+                        <br>
+                        Os próximos <button type="button" id="agir">ACT</button> são disponíveis apenas em Kris, e prescisam de TP:
+                        <ul id="act">
+                            <li>Coragem</li>
+                            <p>25% TP. Disponível apenas na luta contra King. Aumenta a defesa de todos na party.</p>
+                            <li>Pirueta</li>
+                            <p>20% TP. Disponível apenas na luta contra Jevil. faz uma variedade de coisas.</p>
+                            <li>HealDeal</li>
+                            <p></p>
+                            <li>X-Slash</li>
+                            <p></p>
+                            <li>FriedPipis</li>
+                            <p></p>
+                        </ul>
+                    </p>
+                    <h2>
+                        Mudanças na História
+                    </h2>
+                    <p>
+
+                    </p>
+                </div>
+                <div id="krisimg">
+                    <img src="Personagem/krissprite.gif" width="300px">
+                </div>
+                <!-- Sprites, moveset e alguma info sobre ele -->
+            </div>
+            <div id="ralseihs" style="display: none;">
+                <img src="Personagem/ralseisprite.gif" width="300px">
+                <!-- Sprites, moveset e alguma info sobre ele -->
+            </div>
+            <div id="susiehs" style="display: none;">
+                <img src="Personagem/susiesprite.gif" width="300px">
+                <!-- Sprites, moveset e alguma info sobre ele -->
+            </div>
+            <div id="noellehs" style="display: none;">
+                <img src="Personagem/noellesprite.gif" width="300px">
+                <!-- Sprites, moveset e alguma info sobre ele -->
+            </div>
+            <div id="berdlyhs" style="display: none;">
+                <img src="Personagem/berdlysprite.gif" width="300px">
+                <!-- Sprites, moveset e alguma info sobre ele -->
+            </div>
+            <div id="enemieshs" style="display: none;">
+
+                <!-- Sprites, moveset e alguma info sobre ele -->
+            </div>
+            <div id="npcshs" style="display: none;">
+
+                <!-- Sprites, moveset e alguma info sobre ele -->
+            </div>
+        </div>
+    </header>
+    <script src="scripts.js"></script>
+</body>
+</html>
