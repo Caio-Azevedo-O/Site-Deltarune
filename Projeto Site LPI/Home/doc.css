@@ -15,6 +15,7 @@
 {
     font-family: deltar;
     src: url(undertale-deltarune-text-font-extended.ttf);
+    /* mais uma fonte customizada */
 }
 p, h2, h1, ul, h3
 {
@@ -36,53 +37,29 @@ p, h2, h1, ul, h3
     transition: all .35s;
     /* da umas coisinhas pros meus botoes */
 }
-.button.sticky
-{
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    /* n sei pq n funciona */
-}
 .delta
 {
-    width: 1500px;
+    width: 90%;
     padding: 50px;
     margin: 0px;
     font-family: 'Courier New', Courier, monospace;
     color: aliceblue;
-            
+    /* muda a cor da fonte, o padding, a largura e a fonte. */
 }
 .texto1
 {
-    width: 1000px;
+    width: 30%;
     padding: 10px;
-    margin: 30px;
+    margin-top: 100px;
+    margin-left: 5px;
     outline: solid aliceblue thick;
+    /* mudaa largura, o padding, a margem de cima e de baixo da caixa e a borda outline. */
 }
 .titulo1
 {
     font-family: pixel3;
     color: aliceblue;
-}
-#div1
-{
-    column-count: 2;
-    width: 1725px;
-    padding: 50px;
-    outline: solid aliceblue thick;
-}
-#div2
-{
-    column-count: 2;
-    width: 1725px;
-    padding: 50px;
-    outline: aliceblue solid thick;
-}
-.texto1
-{
-    width: 30%;
-    padding: 50px;
-    margin-top: 100px;
+    /* Muda a cor e fonte */
 }
 .ref
 {
@@ -92,18 +69,21 @@ p, h2, h1, ul, h3
     outline: solid aliceblue thick;
     align-items: center;
     text-align: center;
+    /* caixa da referência q leva pro site da steam */
 }
 .imagem
 {
     align-items: center;
     width: 500px;
     padding: 50px;
+    /* muda a largura e o "padding"(uma margem de dentro da caixa, pro conteúdo) de dentro da caixa. */
 }
 .video
 {
     width: 100px;
     padding: auto;
     margin: 0px;
+    /* muda a largura da caixa q contém o vídeo */
 }
 #div1sob
 {
@@ -112,24 +92,28 @@ p, h2, h1, ul, h3
     padding: 25px;
     outline: aliceblue solid thick;
     margin: 1%;
+    /* Muda as propriedades da caixa */
 }
-#Botoes
+#navbar
 {
     width: 101%;
-    background-color: rgb(0, 0, 0);
+    background-color: #000000;
     height: 40px;
     margin-left: -0.5%;
+    /* Faz umas alterações e deixa o botão bonito */
 }
 .button:hover
 {
     box-shadow: 0px 0px 38px 3px #00e1ff;
     background-image: linear-gradient(cornflowerblue, cyan);
     color: aliceblue;
+    /* animação de passar o mouse por cima do botão.  */
 }
 .button:hover:after
 {
-    background-color: rgb(0, 0, 0);
+    background-color: #000000;
     transition: all .50s;
+    /* Animação depois de tirar o mouse de cima do botão. */
 }
 .wrapper
 {
@@ -137,77 +121,89 @@ p, h2, h1, ul, h3
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    /* acho q isso n ta nem fazendo nada,mas talvez eu use mais tarde. resumindo é uma animação de botão*/
 }
 #Sprites_e_Info
 {
     margin: 5%;
     background-color: rgb(0, 0, 0);
     height: max-content;
+    /* muda o tamanho da margem em todos os lados, coloca a cor de fundo preto e coloca a altura como o máximo de conteudo */
 }
 .butao2
 {
     height: 40px;
     float: left;
-    background-color: rgb(0, 0, 0);
-    border: rgb(0, 0, 0);
+    background-color: #000000;
+    border: #000000;
     font-family: pixel3;
-    color:rgb(36, 255, 255);
+    color:#24ffff;
+    /* Muda as propriedades de alguns botões. */
 }
 #krishs
 {
-    background-color: rgb(0, 0, 0);
+    background-color: #000000;
     width: max-content;
     display: grid;
     padding-left: 10px;
-    column-count: 2;
+    grid-template-columns: 1fr;
     height: fit-content;
+    /* Deixa o conteúdo em formato de grid, muda a cor, a largura, a altura e a quantidade de colunas. */
 }
 #ralseihs
 {
-    background-color: rgb(0, 0, 0);
+    background-color: #000000;
     width: max-content;
     height: fit-content;
     display: none;
+    /* Deixa o conteúdo invisivel, muda a cor e a largura. */
 }
 #susiehs
 {
     background-color: #000000;
     width: max-content;
     display: none;
+    /* Deixa o conteúdo invisivel, muda a cor e a largura. */
 }
 #noellehs
 {
     background-color: #000000;
     width: max-content;
     display: none;
+    /* Deixa o conteúdo invisivel, muda a cor e a largura. */
 }
 #berdlyhs
 {
     background-color: #000000;
     width: max-content;
     display: none;
+    /* Deixa o conteúdo invisivel, muda a cor e a largura. */
 }
 #enemieshs
 {
     background-color: #000000;
     width: max-content;
     display: none;
+    /* Deixa o conteúdo invisivel, muda a cor e a largura. */
 }
 #npcshs
 {
     background-color: #000000;
     width: max-content;
     display: none;
+    /* Deixa o conteúdo invisivel, muda a cor e a largura. */
 }
 #contato
 {
     margin-left: 87%;
+    /* separa esse botão dos outros */
 }
 #steam
 {
     margin-left: 43%;
     width: 100px;
     border-radius: 5px;
+    /* muda algumas coisas de um botão. */
 }
 #agir
 {
@@ -216,11 +212,13 @@ p, h2, h1, ul, h3
     font-family: deltar;
     border-radius: 3px;
     background-color: black;
+    /* Cria um botão e muda a cor, fonte e arredonda a borda*/
 }
 #agir:hover
 {
     border: yellow solid 2px;
     color: yellow;
+    /* Provoca uma mudança de cor na borda e fonte de um botão quando você passa o mouse por cima. */
 }
 #krisimg
 {
@@ -231,28 +229,33 @@ p, h2, h1, ul, h3
     width: fit-content;
     height: fit-content;
     text-align: center;
+    /* Muda a alinhação pro centro, deixa a altura definida pela quantidade de conteúdo, mesma coisa com a largura, coloca uma borda cinza, deixa ela um pouco arredondado. */
 }
 #krisinfo
 {
     width: 30%;
     margin-right: 0%;
+    /* muda o tamanho da caixa para 30% dentro de outra caixa e a margem da direita deixa 0% */
 }
 table
 {
     text-align: center;
     font-family: pixel3;
     color: aliceblue;
-    border: #c2c2c2 1px solid;
+    border: #c2c2c2 1px solid;    
+    /* Alinha as coisas pro centro, muda a fonte e a cor dela, e mexe com a borda. */
 }
 th
 {
     width: 20%;
     border: #c2c2c2 1px solid;
     background-color: rgb(29, 29, 29);
+    /* Muda a cor de funto, mexe com o tamanho da tabela, e muda cor tamanho e o tipo de borda */
 }
 td
 {
     border: #c2c2c2 1px solid;
+    /* muda a cor, o tamanho e o tipo de borda */
 }
 #KIN
 {
@@ -263,6 +266,7 @@ td
     background-color: #008fe2;
     font-family: pixel3;
     color: aliceblue;
+    /* Mesma coisa #RIN */
 }
 #KII
 {
@@ -275,6 +279,7 @@ td
     color: aliceblue;
     align-items: center;
     text-align: center;
+    /* mesma coisa  #RII */
 }
 #RIN
 {
@@ -287,6 +292,7 @@ td
     color: aliceblue;
     align-items: center;
     text-align: center;
+    /* mesma coisa do código de baixo, mas com uma borda mais redonda */
 }
 #RII
 {
@@ -299,6 +305,7 @@ td
     color: aliceblue;
     align-items: center;
     text-align: center;
+    /* faz uma caixinha, muda a cor dela pra azul, muda a fonte(cor e fonte), mexe com o tamanho da caixa, e alinha os items e o texto pro centro */
 }
 #ralseiimg
 {
@@ -309,4 +316,24 @@ td
     width: fit-content;
     height: fit-content;
     text-align: center;
+    /* Muda a alinhação pro centro, deixa a altura definida pela quantidade de conteúdo, mesma coisa com a largura, coloca uma borda cinza, deixa ela um pouco arredondado.*/
+}
+.sticky
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+#headbar
+{
+    display: grid;
+    height: max-content;
+    width: 110%;
+    margin: -0.5%;
+    background-color: #008fe2;
+    grid-template-columns: 1fr 1fr;
+}
+#headbartext
+{
+    margin-left: -15%;
 }
