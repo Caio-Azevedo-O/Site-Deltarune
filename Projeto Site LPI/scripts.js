@@ -383,7 +383,7 @@ function sticky()
 {
     if (navbar.pageYOffset >= sticky)
     {
-        navbar.style.boxShadow = "aliceblue"
+        navbar.style.boxShadow = "rgba(aliceblue, 0.5)"
         navbar.classList.add("sticky")
     }
     else
