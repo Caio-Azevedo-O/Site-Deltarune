@@ -18,44 +18,53 @@
         {
             color: rgb(239, 255, 17);
             border-bottom: 2px solid rgb(239, 255, 17);
+            /* Deixa a cor padrão quando você entra no site do botão kris */
         }
         #ralseib
         {
             color: rgb(36, 255, 255);
             border-bottom: 2px solid rgb(0, 0, 0);
+            /* Deixa a cor padrão quando você entra no site do botão ralsei */
         }
         #susieb
         {
             color: rgb(36, 255, 255);
             border-bottom: 2px solid rgb(0, 0, 0);
+            /* Deixa a cor padrão quando você entra no site do botão susie */
         }
         #noelleb
         {
             color: rgb(36, 255, 255);
             border-bottom: 2px solid rgb(0, 0, 0);
+            /* Deixa a cor padrão quando você entra no site do botão noelle */
         }
         #berdlyb
         {
             color: rgb(36, 255, 255);
             border-bottom: 2px solid rgb(0, 0, 0);
+            /* Deixa a cor padrão quando você entra no site do botão berdly */
         }
         #enemiesb
         {
             color: rgb(36, 255, 255);
             border-bottom: 2px solid rgb(0, 0, 0);
+            /* Deixa a cor padrão quando você entra no site do botão inimigos */
         }
         #npcb
         {
             color: rgb(36, 255, 255);
             border-bottom: 2px solid rgb(0, 0, 0);
+            /* Deixa a cor padrão quando você entra no site do botão NPCS */
         }
     </style>
 </head>
 <body>
-    <div id="headbar">
-        <img src="Home/favicon.png" width="70px">
-        <h1 id="headbartext">Personagem</h1>
-    </div>
+    <header>
+        <div id="headbar">
+            <img src="Home/favicon.png" width="70px">
+            <h1 id="headbartext">Personagem</h1>
+        </div>
+    </header>
     <nav>
         <div id="navbar">
             <a href="home.html"><button type="button", class="button"><span><i class="fa-solid fa-house"></i></span></button></a>
@@ -65,22 +74,31 @@
             <!--Codigo que conecta as outras paginas-->
         </div>
     </nav>
-    <header>
+    <main>
         <div id="Sprites_e_Info">
             <button onclick="kris()" type="button" class="butao2" id="krisb">Kris</button>
             <button onclick="ralsei()" type="button" class="butao2" id="ralseib">Ralsei</button>
             <button onclick="susie()" type="button" class="butao2" id="susieb">Susie</button>
             <button onclick="noelle()" type="button" class="butao2" id="noelleb">Noelle</button>
             <button onclick="berdly()" type="button" class="butao2" id="berdlyb">Berdly</button>
-            <button onclick="enemies()" type="button" class="butao2" id="enemiesb">Enemies</button>
+            <button onclick="enemies()" type="button" class="butao2" id="enemiesb">Inimigos</button>
             <button onclick="npcs()" type="button" class="butao2" id="npcb">NPCS</button>
+            <br>
+            <br>
+            <br>
             <div id="krishs" style="display: grid;">
                 <div id="krisimg">
                     <div id="KIN">
                         Kris
                     </div>
+                    <div id="spritesk">
+                        <button onclick="" class="butao2">Movimento</button>
+                        <button onclick="" class="butao2">Defendendo</button>
+                        <button onclick="" class="butao2">Atacando</button>
+                        <button onclick="" class="butao2">Emote</button>
+                    </div>
                     <br>
-                    <img src="Personagem/krissprite.gif" width="300px">
+                    <img src="Personagem/krissprite.gif" width="300px" style="display: block;">
                     <br>
                     <div>
                         <div id="KII">
@@ -213,9 +231,6 @@
                 </div>
                 <!-- Sprites, moveset e alguma info sobre ele -->
             </div>
-            <br>
-            <br>
-            <br>
             <div id="ralseihs" style="display: none;">
                 <div id="ralseiimg">
                     <div id="RIN">
@@ -251,7 +266,7 @@
                 <!-- Sprites, moveset e alguma info sobre ele -->
             </div>
         </div>
-    </header>
+    </main>
     <script src="scripts.js"></script>
 </body>
 </html>
