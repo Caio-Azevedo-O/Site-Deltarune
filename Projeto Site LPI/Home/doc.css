@@ -96,6 +96,7 @@ p, h2, h1, ul, h3
 }
 #navbar
 {
+    overflow: visible;
     width: 101%;
     background-color: #000000;
     height: 40px;
@@ -147,6 +148,7 @@ p, h2, h1, ul, h3
     display: grid;
     padding-left: 10px;
     grid-template-columns: 1fr;
+    column-count: 2;
     height: fit-content;
     /* Deixa o conteúdo em formato de grid, muda a cor, a largura, a altura e a quantidade de colunas. */
 }
@@ -195,7 +197,7 @@ p, h2, h1, ul, h3
 }
 #contato
 {
-    margin-left: 87%;
+    margin-left: 83%;
     /* separa esse botão dos outros */
 }
 #steam
