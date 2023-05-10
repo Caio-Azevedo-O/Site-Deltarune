@@ -145,7 +145,7 @@ p, h2, h1, ul, h3
 {
     background-color: #000000;
     width: fit-content;
-    display: grid;
+    display: flex;
     padding-left: 10px;
     grid-template-columns: 1fr;
     column-count: 2;
@@ -224,6 +224,7 @@ p, h2, h1, ul, h3
 }
 #krisimg
 {
+    margin-left: 20%;
     align-items: center;
     padding: 5px;
     border: #c2c2c2 2px solid;
@@ -325,6 +326,7 @@ td
     position: fixed;
     top: 0;
     width: 100%;
+    /* por enquanto n faz nada */
 }
 #headbar
 {
@@ -334,8 +336,15 @@ td
     margin: -0.5%;
     background-color: #008fe2;
     grid-template-columns: 1fr 1fr;
+    /* modifica o header */
 }
 #headbartext
 {
     margin-left: -15%;
+    /* Gruda o header nas pontas do site */
+}
+.footer
+{
+    background-color: #008fe2;
+    height: 70px;
 }
