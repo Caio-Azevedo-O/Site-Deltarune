@@ -30,7 +30,31 @@ var contato = document.getElementById("contato")
 
 var navbar = document.getElementById("navbar")
 
+var movk = document.getElementById("kb1")
+
+var defk = document.getElementById("kb2")
+
+var atkk = document.getElementById("kb3")
+
+var actk = document.getElementById("kb4")
+
+var kmov = document.getElementById("kmov")
+
+var katk = document.getElementById("katk")
+
+var kdef = document.getElementById("kdef")
+
+var kact = document.getElementById("kact")
+
 var sticky = navbar.offsetTop;
+
+var kb1t = true
+
+var kb2t = false
+
+var kb3t = false
+
+var kb4t = false
 
 var ktrue = true
 
@@ -48,65 +72,54 @@ var nptrue = false
 
 function kris()
 {
-    if (ktrue = true)
-    {
-        ktrue = false
-        rtrue = true
-        strue = true
-        ntrue = true
-        btrue = true
-        etrue = true
-        nptrue = true
-        kris1.style.display = "grid";
-        ralsei1.style.display = "none";
-        susie1.style.display = "none";
-        noelle1.style.display = "none";
-        berdly1.style.display = "none";
-        enemies1.style.display = "none";
-        npcs1.style.display = "none";
-    }
+    ktrue = false
+    rtrue = true
+    strue = true
+    ntrue = true
+    btrue = true
+    etrue = true
+    nptrue = true
+    kris1.style.display ="flex";
+    ralsei1.style.display = "none";
+    susie1.style.display = "none";
+    noelle1.style.display = "none";
+    berdly1.style.display = "none";
+    enemies1.style.display = "none";
+    npcs1.style.display = "none";
 }
 function ralsei()
 {
-
-    if (rtrue = true)
-    {
-        ktrue = true
-        rtrue = false
-        strue = true
-        ntrue = true
-        btrue = true
-        etrue = true
-        nptrue = true
-        kris1.style.display = "none";
-        ralsei1.style.display = "grid";
-        susie1.style.display = "none";
-        noelle1.style.display = "none";
-        berdly1.style.display = "none";
-        enemies1.style.display = "none";
-        npcs1.style.display = "none";
-    }
+    ktrue = true
+    rtrue = false
+    strue = true
+    ntrue = true
+    btrue = true
+    etrue = true
+    nptrue = true
+    kris1.style.display = "none";
+    ralsei1.style.display ="flex";
+    susie1.style.display = "none";
+    noelle1.style.display = "none";
+    berdly1.style.display = "none";
+    enemies1.style.display = "none";
+    npcs1.style.display = "none";
 }
 function susie()
 {
-
-    if (strue = true)
-    {
-        ktrue = true
-        rtrue = true
-        strue = false
-        ntrue = true
-        btrue = true
-        etrue = true
-        nptrue = true
-        kris1.style.display = "none";
-        ralsei1.style.display = "none";
-        susie1.style.display = "grid";
-        noelle1.style.display = "none";
-        berdly1.style.display = "none";
-        enemies1.style.display = "none";
-        npcs1.style.display = "none";
-    }
+    ktrue = true
+    rtrue = true
+    strue = false
+    ntrue = true
+    btrue = true
+    etrue = true
+    nptrue = true
+    kris1.style.display = "none";
+    ralsei1.style.display = "none";
+    susie1.style.display ="flex";
+    noelle1.style.display = "none";
+    berdly1.style.display = "none";
+    enemies1.style.display = "none";
+    npcs1.style.display = "none";
 }
 function noelle()
 {
@@ -123,7 +136,7 @@ function noelle()
         kris1.style.display = "none";
         ralsei1.style.display = "none";
         susie1.style.display = "none";
-        noelle1.style.display = "grid";
+        noelle1.style.display ="flex";
         berdly1.style.display = "none";
         enemies1.style.display = "none";
         npcs1.style.display = "none";
@@ -145,7 +158,7 @@ function berdly()
         ralsei1.style.display = "none";
         susie1.style.display = "none";
         noelle1.style.display = "none";
-        berdly1.style.display = "grid";
+        berdly1.style.display ="flex";
         enemies1.style.display = "none";
         npcs1.style.display = "none";
     }
@@ -167,7 +180,7 @@ function enemies()
         susie1.style.display = "none";
         noelle1.style.display = "none";
         berdly1.style.display = "none";
-        enemies1.style.display = "grid";
+        enemies1.style.display ="flex";
         npcs1.style.display = "none";
     }
 }
@@ -189,7 +202,7 @@ function npcs()
         noelle1.style.display = "none";
         berdly1.style.display = "none";
         enemies1.style.display = "none";
-        npcs1.style.display = "grid";
+        npcs1.style.display ="flex";
     }
 }
 krisb.addEventListener("click", function onClick()
@@ -379,17 +392,92 @@ contato.addEventListener("click", function onClick()
     window.open("contato.html")
 });
 
-function sticky()
+function kb1()
 {
-    if (navbar.pageYOffset >= sticky)
-    {
-        navbar.style.boxShadow = "rgba(aliceblue, 0.5)"
-        navbar.classList.add("sticky")
-    }
-    else
-    {
-        navbar.style.boxShadow = "none"
-        navbar.classList.remove("sticky")
-    }
+    kb1t = false
+    kb2t = true
+    kb3t = true
+    kb4t = true
+    kmov.style.display = "block";
+    katk.style.display = "none";
+    kdef.style.display = "none";
+    kact.style.display = "none";
 }
-window.onscroll = sticky();
+function kb2()
+{
+    kb1t = true
+    kb2t = false
+    kb3t = true
+    kb4t = true
+    kdef.style.display = "block";
+    kmov.style.display = "none";  
+    katk.style.display = "none";
+    kact.style.display = "none";
+}
+function kb3()
+{
+    kb1t = true
+    kb2t = true
+    kb3t = false
+    kb4t = true
+    katk.style.display = "block";
+    kmov.style.display = "none";
+    kdef.style.display = "none";
+    kact.style.display = "none";
+}
+function kb4()
+{
+    kb1t = true
+    kb2t = true
+    kb3t = true
+    kb4t = false
+    kact.style.display = "block";
+    kmov.style.display = "none";
+    kdef.style.display = "none";
+    katk.style.display = "none";
+}
+movk.addEventListener("click", function onClick()
+{
+    movk.style.color = "rgb(239, 255, 17)"
+    movk.style.borderBottomColor = "rgb(239, 255, 17)"
+    defk.style.color = "rgb(36, 255, 255)"
+    defk.style.borderBottomColor = "rgb(0, 0, 0)"
+    atkk.style.color = "rgb(36, 255, 255)"
+    atkk.style.borderBottomColor = "rgb(0, 0, 0)"
+    actk.style.color = "rgb(36, 255, 255)"
+    actk.style.borderBottomColor = "rgb(0, 0, 0)"
+
+});
+defk.addEventListener("click", function onClick()
+{
+    movk.style.color = "rgb(36, 255, 255)"
+    movk.style.borderBottomColor = "rgb(0, 0, 0)"
+    defk.style.color = "rgb(239, 255, 17)"
+    defk.style.borderBottomColor = "rgb(239, 255, 17)"
+    atkk.style.color = "rgb(36, 255, 255)"
+    atkk.style.borderBottomColor = "rgb(0, 0, 0)"
+    actk.style.color = "rgb(36, 255, 255)"
+    actk.style.borderBottomColor = "rgb(0, 0, 0)"
+});
+atkk.addEventListener("click", function onClick()
+{
+    movk.style.color = "rgb(36, 255, 255)"
+    movk.style.borderBottomColor = "rgb(0, 0, 0)"
+    defk.style.color = "rgb(36, 255, 255)"
+    defk.style.borderBottomColor = "rgb(0, 0, 0)"
+    atkk.style.color = "rgb(239, 255, 17)"
+    atkk.style.borderBottomColor = "rgb(239, 255, 17)"
+    actk.style.color = "rgb(36, 255, 255)"
+    actk.style.borderBottomColor = "rgb(0, 0, 0)"
+});
+actk.addEventListener("click", function onClick()
+{
+    movk.style.color = "rgb(36, 255, 255)"
+    movk.style.borderBottomColor = "rgb(0, 0, 0)"
+    defk.style.color = "rgb(36, 255, 255)"
+    defk.style.borderBottomColor = "rgb(0, 0, 0)"
+    atkk.style.color = "rgb(36, 255, 255)"
+    atkk.style.borderBottomColor = "rgb(0, 0, 0)"
+    actk.style.color = "rgb(239, 255, 17)"
+    actk.style.borderBottomColor = "rgb(239, 255, 17)"
+});
