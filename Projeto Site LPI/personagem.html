@@ -14,11 +14,16 @@
             background-image: url(Personagem/back\ img.png);
             /*Coloca uma imagem no fundo do site*/
         }
-        #krisb
+        #krisb, #kb1, #movr, #movs, #movn, #movb, #move, #movnpc
         {
             color: rgb(239, 255, 17);
             border-bottom: 2px solid rgb(239, 255, 17);
             /* Deixa a cor padrão quando você entra no site do botão kris */
+        }
+        #kb2, #kb3, #kb4
+        {
+            color: rgb(36, 255, 255);
+            border-bottom: 2px solid rgb(0, 0, 0);
         }
         #ralseib
         {
@@ -86,58 +91,7 @@
             <br>
             <br>
             <br>
-            <div id="krishs" style="display: grid;">
-                <div id="krisimg">
-                    <div id="KIN">
-                        Kris
-                    </div>
-                    <div id="spritesk">
-                        <button onclick="" class="butao2">Movimento</button>
-                        <button onclick="" class="butao2">Defendendo</button>
-                        <button onclick="" class="butao2">Atacando</button>
-                        <button onclick="" class="butao2">Emote</button>
-                    </div>
-                    <br>
-                    <img src="Personagem/krissprite.gif" width="300px" style="display: block;">
-                    <br>
-                    <div>
-                        <div id="KII">
-                            Info
-                        </div>
-                        <h3 style="border-bottom: #363636 2px solid;">
-                            Primeira aparição
-                        </h3>
-                        <div >
-                            <p>
-                                Hometown
-                            </p>
-                        </div>
-                        <h3 style="border-bottom: #363636 2px solid;">
-                            Relações
-                        </h3>
-                        <div>
-                            <p>
-                                Asgore(Pai adotivo)
-                                <br>
-                                Toriel(Mãe adotiva)
-                                <br>
-                                Asriel(Irmão adotivo)
-                                <br>
-                                Ralsei(Amigo, Colega de Time)
-                                <br>
-                                Susie(Amigo, Colega de Time,<br> Antigo inimigo)
-                                <br>
-                                Lancer(Amigo, Aliado,<br> Antigo inimigo)
-                                <br>
-                                Noelle(Amigo, Colega de Classe,<br> Colega de Time, Vizinho)
-                                <br>
-                                Berdly(Aliado, Colega de Classe,<br> Antigo inimigo)
-                                <br>
-                                Alphys(Professora)
-                            </p>
-                        </div>
-                    </div>
-                </div>
+            <div id="krishs" style="display: flex;">
                 <div id="krisinfo">
                     <br>
                     <h1>
@@ -229,6 +183,67 @@
                         Kris pode manipular noelle a usar seus poderes de gelo para congelar todos em seu caminho, fazendo a rota Snowgrave, que alguns jogadores chamam, em referência a undertale, de rota genocída.
                     </p>
                 </div>
+                <div id="krisimg">
+                    <div id="KIN">
+                        Kris
+                    </div>
+                    <div id="spritesk">
+                        <button onclick="kb1()" type="button" class="butao2" id="kb1">Movimento</button>
+                        <button onclick="kb2()" type="button" class="butao2" id="kb2">Defendendo</button>
+                        <button onclick="kb3()" type="button" class="butao2" id="kb3">X-Slashes</button>
+                        <button onclick="kb4()" type="button" class="butao2" id="kb4">ACT</button>
+                    </div>
+                    <br>
+                    <div style="width: fit-content; display: block;" id="kmov">
+                        <img src="Personagem/krissprite.gif" width="300px">
+                    </div>
+                    <div style="width: fit-content; display: none;" id="katk">
+                        <img src="Personagem/krisxslash.gif" width="300px">
+                    </div>
+                    <div style="width: fit-content; display: none;" style="display: none;" id="kdef">
+                        <img src="Personagem/krisdef.gif" width="300px">
+                    </div>
+                    <div style="width: fit-content; display: none;" id="kact">
+                        <img src="Personagem/krisact.gif" width="300px">
+                    </div>
+                    <div>
+                        <div id="KII">
+                            Info
+                        </div>
+                        <h3 style="border-bottom: #363636 2px solid;">
+                            Primeira aparição
+                        </h3>
+                        <div >
+                            <p>
+                                Hometown
+                            </p>
+                        </div>
+                        <h3 style="border-bottom: #363636 2px solid;">
+                            Relações
+                        </h3>
+                        <div>
+                            <p>
+                                Asgore(Pai adotivo)
+                                <br>
+                                Toriel(Mãe adotiva)
+                                <br>
+                                Asriel(Irmão adotivo)
+                                <br>
+                                Ralsei(Amigo, Colega de Time)
+                                <br>
+                                Susie(Amigo, Colega de Time,<br> Antigo inimigo)
+                                <br>
+                                Lancer(Amigo, Aliado,<br> Antigo inimigo)
+                                <br>
+                                Noelle(Amigo, Colega de Classe,<br> Colega de Time, Vizinho)
+                                <br>
+                                Berdly(Aliado, Colega de Classe,<br> Antigo inimigo)
+                                <br>
+                                Alphys(Professora)
+                            </p>
+                        </div>
+                    </div>
+                </div>
                 <!-- Sprites, moveset e alguma info sobre ele -->
             </div>
             <div id="ralseihs" style="display: none;">
@@ -267,6 +282,12 @@
             </div>
         </div>
     </main>
+    <footer style="align-items: center; text-align: center; color: aliceblue; font-family: pixel3;">
+        <div class="footer">Website created by caio azevedo in 2023
+            <br>
+            <img src="Home/favicon.png" width="50px">
+        </div>
+    </footer>
     <script src="scripts.js"></script>
 </body>
 </html>
