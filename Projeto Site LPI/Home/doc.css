@@ -345,6 +345,8 @@ td
 }
 .footer
 {
+    margin-left: -0.6%;
     background-color: #008fe2;
     height: 70px;
+    width: 110%;
 }
