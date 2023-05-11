@@ -14,13 +14,13 @@
             background-image: url(Personagem/back\ img.png);
             /*Coloca uma imagem no fundo do site*/
         }
-        #krisb, #kb1, #movr, #movs, #movn, #movb, #move, #movnpc
+        #krisb, #kb1, #movr, #movs, #movn, #movb, #move, #movnpc, #rb1
         {
             color: rgb(239, 255, 17);
             border-bottom: 2px solid rgb(239, 255, 17);
             /* Deixa a cor padrão quando você entra no site do botão kris */
         }
-        #kb2, #kb3, #kb4
+        #kb2, #kb3, #kb4, #rb2, #rb3, #rb4, #rb5
         {
             color: rgb(36, 255, 255);
             border-bottom: 2px solid rgb(0, 0, 0);
@@ -121,7 +121,7 @@
                     <table>
                         <theader>
                             <tr>
-                                <th>LVL</th>
+                                <th>LV</th>
                                 <th>HP</th>
                                 <th>Ataque</th>
                                 <th>Defesa</th>
@@ -247,13 +247,106 @@
                 <!-- Sprites, moveset e alguma info sobre ele -->
             </div>
             <div id="ralseihs" style="display: none;">
+                <div id="ralseiinfo">
+                    <h1>Ralsei</h1>
+                    <br>
+                    <br>
+                    <p>
+                        Ralsei é um "Darkener", e um dos personagens principais(junto com susie e kris). é o príncipe da escuridão, mencionado na profecia da deltarune.
+                    </p>
+                    <h2>História</h2>
+                    <p>
+                        Até conhecer Kris e Susie, Ralsei vivia em Castle Town. Mesmo tendo o título de príncipe, não tinha nenhum vassalo ou servo. Não é falado se alguma outra pessoa ja viveu naquele castelo, mas sabemos que ralsei sabia da profecia e esperou Kris e Susie para contar a eles sobre ela.
+                    </p>
+                    <h2>Combate</h2>
+                    <h3>Status</h3>
+                    <table>
+                        <theader>
+                            <tr>
+                                <th>LV</th>
+                                <th>HP</th>
+                                <th>Ataque</th>
+                                <th>Defesa</th>
+                                <th>Magia</th>
+                                <th>Guts</th>
+                            </tr>
+                        </theader>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>70</td>
+                                <td>8</td>
+                                <td>2</td>
+                                <td>7</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>100</td>
+                                <td>10</td>
+                                <td>2</td>
+                                <td>9</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>140</td>
+                                <td>12-13</td>
+                                <td>2</td>
+                                <td>11-12</td>
+                                <td>0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h3>Feitiços</h3>
+                    <p>
+                        Ralsei é um monstro, então tem um arsenal de magia como todos os outros. a magia dele é de fogo, mas no jogo ele apenas usa feitiços que curam os outros e poupam eles.
+                        Eles também prescisam de TP, então estarei mostrando a quantidade necessária para cada feitiço:
+                        <ul>
+                            <li>Pacify</li>
+                            <p>16% de TP. se o inimigo estiver cansado ou com sono, ralsei pode utilizar esse feitiço para poupar eles imediatamente.</p>
+                            <li>Heal Prayer</li>
+                            <p>32% de TP. cura o alvo que você escolher, extremamente útil em batalhas complicadas como a do jevil.</p>
+                            <li>Dual Heal</li>
+                            <p>50% de TP. Pode apenas ser utilizado na batalha pelo comando do kris com <button type="button" id="agir">ACT</button> durante as batalhas de king e queen. no capítulo 1 cura status de <b>magiax4</b>, e no capitulo 2 cura status de <b>magiax5.5</b></p>
+                            <li>R-Action</li>
+                            <p>Diferente de outros feitiços, esse nãoé necessário usar TP. Similar ao feitiço S-Action da susie, ralsei faz a ação selecionada de kris, e pode utilizar em outro inimigo.</p>
+                            <li>FluffyGuard</li>
+                            <p>16% de TP. Exclusivo para a batalha de Spamton NEO. Sumona 2 bolas com pelo animal que orbitam a ALMA de kris, defendendo ele de ataques no turno do oponente.</p>
+                        </ul>
+                    </p>
+                </div>
                 <div id="ralseiimg">
                     <div id="RIN">
                         Ralsei
                     </div>
+                    <div id="spritesr">
+                        <button onclick="rab1()" type="button" class="butao2" id="rb1">Movimento</button>
+                        <button onclick="rab2()" type="button" class="butao2" id="rb2">Atacando</button>
+                        <button onclick="rab3()" type="button" class="butao2" id="rb3">Defendendo</button>
+                        <button onclick="rab4()" type="button" class="butao2" id="rb4">Feitiço</button>
+                        <button onclick="rab5()" type="button" class="butao2" id="rb5">R-Action</button>
+                    </div>
                     <br>
-                    <img src="Personagem/ralseisprite.gif" width="300px">
+                    <div style="width: fit-content; display: block;" id="rmov">
+                        <img src="Personagem/ralseisprite.gif" width="300px">
+                    </div>
                     <br>
+                    <div style="width: fit-content; display: none;" id="ratk">
+                        <img src="Personagem/ralseiatk.gif" width="300px">
+                    </div>
+                    <br>
+                    <div style="width: fit-content; display: none;" id="rdef">
+                        <img src="Personagem/ralseidef.gif" width="300px">
+                    </div>
+                    <br>
+                    <div style="width: fit-content; display: none;" id="rspell">
+                        <img src="Personagem/ralseispell.gif" width="300px">
+                    </div>
+                    <br>
+                    <div style="width: fit-content; display: none;" id="ract">
+                        <img src="Personagem/ralseiact.gif" width="300px">
+                    </div>
                     <div id="RII">
                         Info
                     </div>
