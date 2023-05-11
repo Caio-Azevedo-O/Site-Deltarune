@@ -46,6 +46,26 @@ var kdef = document.getElementById("kdef")
 
 var kact = document.getElementById("kact")
 
+var rb1 = document.getElementById("rb1")
+
+var rb2 = document.getElementById("rb2")
+
+var rb3 = document.getElementById("rb3")
+
+var rb4 = document.getElementById("rb4")
+
+var rb5 = document.getElementById("rb5")
+
+var rmov = document.getElementById("rmov")
+
+var ratk = document.getElementById("ratk")
+
+var rdef = document.getElementById("rdef")
+
+var rspell = document.getElementById("rspell")
+
+var ract = document.getElementById("ract")
+
 var sticky = navbar.offsetTop;
 
 var kb1t = true
@@ -55,6 +75,16 @@ var kb2t = false
 var kb3t = false
 
 var kb4t = false
+
+var rb1t = true
+
+var rb2t = false
+
+var rb3t = false
+
+var rb4t = false
+
+var rb5t = false
 
 var ktrue = true
 
@@ -480,4 +510,139 @@ actk.addEventListener("click", function onClick()
     atkk.style.borderBottomColor = "rgb(0, 0, 0)"
     actk.style.color = "rgb(239, 255, 17)"
     actk.style.borderBottomColor = "rgb(239, 255, 17)"
+});
+function rab1()
+{
+    rb1t = false
+    rb2t = true
+    rb3t = true
+    rb4t = true
+    rb5t = true
+    rmov.style.display = "block";
+    ratk.style.display = "none";
+    rdef.style.display = "none";
+    rspell.style.display = "none";
+    ract.style.display = "none";
+};
+function rab2()
+{
+    rb1t = true
+    rb2t = false
+    rb3t = true
+    rb4t = true
+    rb5t = true
+    rmov.style.display = "none";
+    ratk.style.display = "block";
+    rdef.style.display = "none";
+    rspell.style.display = "none";
+    ract.style.display = "none";
+};
+function rab3()
+{
+    rb1t = true
+    rb2t = true
+    rb3t = false
+    rb4t = true
+    rb5t = true
+    rmov.style.display = "none";
+    ratk.style.display = "none";
+    rdef.style.display = "block";
+    rspell.style.display = "none";
+    ract.style.display = "none";
+};
+function rab4()
+{
+    rb1t = true
+    rb2t = true
+    rb3t = true
+    rb4t = false
+    rb5t = true
+    rmov.style.display = "none";
+    ratk.style.display = "none";
+    rdef.style.display = "none";
+    rspell.style.display = "block";
+    ract.style.display = "none";
+};
+function rab5()
+{
+    rb1t = true
+    rb2t = true
+    rb3t = true
+    rb4t = true
+    rb5t = false
+    rmov.style.display = "none";
+    ratk.style.display = "none";
+    rdef.style.display = "none";
+    rspell.style.display = "none";
+    ract.style.display = "block";
+};
+rb1.addEventListener("click", function onClick()
+{
+    rb1.style.color = "rgb(239, 255, 17)"
+    rb1.style.borderBottomColor = "rgb(239, 255, 17)"
+    rb2.style.color = "rgb(36, 255, 255)"
+    rb2.style.borderBottomColor = "rgb(0, 0, 0)"
+    rb3.style.color = "rgb(36, 255, 255)"
+    rb3.style.borderBottomColor = "rgb(0, 0, 0)"
+    rb4.style.color = "rgb(36, 255, 255)"
+    rb4.style.borderBottomColor = "rgb(0, 0, 0)"
+    rb5.style.color = "rgb(36, 255, 255)"
+    rb5.style.borderBottomColor = "rgb(0, 0, 0)"
+
+});
+rb2.addEventListener("click", function onClick()
+{
+    rb2.style.color = "rgb(239, 255, 17)"
+    rb2.style.borderBottomColor = "rgb(239, 255, 17)"
+    rb1.style.color = "rgb(36, 255, 255)"
+    rb1.style.borderBottomColor = "rgb(0, 0, 0)"
+    rb3.style.color = "rgb(36, 255, 255)"
+    rb3.style.borderBottomColor = "rgb(0, 0, 0)"
+    rb4.style.color = "rgb(36, 255, 255)"
+    rb4.style.borderBottomColor = "rgb(0, 0, 0)"
+    rb5.style.color = "rgb(36, 255, 255)"
+    rb5.style.borderBottomColor = "rgb(0, 0, 0)"
+
+});
+rb3.addEventListener("click", function onClick()
+{
+    rb3.style.color = "rgb(239, 255, 17)"
+    rb3.style.borderBottomColor = "rgb(239, 255, 17)"
+    rb2.style.color = "rgb(36, 255, 255)"
+    rb2.style.borderBottomColor = "rgb(0, 0, 0)"
+    rb1.style.color = "rgb(36, 255, 255)"
+    rb1.style.borderBottomColor = "rgb(0, 0, 0)"
+    rb4.style.color = "rgb(36, 255, 255)"
+    rb4.style.borderBottomColor = "rgb(0, 0, 0)"
+    rb5.style.color = "rgb(36, 255, 255)"
+    rb5.style.borderBottomColor = "rgb(0, 0, 0)"
+
+});
+rb4.addEventListener("click", function onClick()
+{
+    rb4.style.color = "rgb(239, 255, 17)"
+    rb4.style.borderBottomColor = "rgb(239, 255, 17)"
+    rb2.style.color = "rgb(36, 255, 255)"
+    rb2.style.borderBottomColor = "rgb(0, 0, 0)"
+    rb3.style.color = "rgb(36, 255, 255)"
+    rb3.style.borderBottomColor = "rgb(0, 0, 0)"
+    rb1.style.color = "rgb(36, 255, 255)"
+    rb1.style.borderBottomColor = "rgb(0, 0, 0)"
+    rb5.style.color = "rgb(36, 255, 255)"
+    rb5.style.borderBottomColor = "rgb(0, 0, 0)"
+
+});
+rb5.addEventListener("click", function onClick()
+{
+    rb5.style.color = "rgb(239, 255, 17)"
+    rb5.style.borderBottomColor = "rgb(239, 255, 17)"
+    rb2.style.color = "rgb(36, 255, 255)"
+    rb2.style.borderBottomColor = "rgb(0, 0, 0)"
+    rb3.style.color = "rgb(36, 255, 255)"
+    rb3.style.borderBottomColor = "rgb(0, 0, 0)"
+    rb4.style.color = "rgb(36, 255, 255)"
+    rb4.style.borderBottomColor = "rgb(0, 0, 0)"
+    rb1.style.color = "rgb(36, 255, 255)"
+    rb1.style.borderBottomColor = "rgb(0, 0, 0)"
+
 });
