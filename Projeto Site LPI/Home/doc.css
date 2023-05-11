@@ -17,6 +17,11 @@
     src: url(undertale-deltarune-text-font-extended.ttf);
     /* mais uma fonte customizada */
 }
+@font-face
+{
+    font-family: undertale;
+    src: url(undertale-deltarune-text-font-extended.ttf);
+}
 p, h2, h1, ul, h3
 {
     font-family: pixel3;
@@ -315,6 +320,7 @@ td
 }
 #ralseiimg
 {
+    margin-left: 20%;
     align-items: center;
     padding: 5px;
     border: #c2c2c2 2px solid;
@@ -323,6 +329,12 @@ td
     height: fit-content;
     text-align: center;
     /* Muda a alinhação pro centro, deixa a altura definida pela quantidade de conteúdo, mesma coisa com a largura, coloca uma borda cinza, deixa ela um pouco arredondado.*/
+}
+#ralseiinfo
+{
+    width: 30%;
+    margin-right: 0%;
+    /* muda o tamanho da caixa para 30% dentro de outra caixa e a margem da direita deixa 0% */
 }
 .sticky
 {
