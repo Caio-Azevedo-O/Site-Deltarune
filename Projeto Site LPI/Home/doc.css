@@ -111,10 +111,10 @@ p, h2, h1, ul, h3
 }
 .button:hover
 {
-    box-shadow: 0px 0px 38px 20px #00e1ff;
+    box-shadow: 0px 0px 38px 12px #00e1ffc7;
     background-image: linear-gradient(cornflowerblue, cyan);
     color: aliceblue;
-    transition: ease-in-out .58s;
+    transition: ease-in-out .3s;
     /* animação de passar o mouse por cima do botão.  */
 }
 .button:hover:after
