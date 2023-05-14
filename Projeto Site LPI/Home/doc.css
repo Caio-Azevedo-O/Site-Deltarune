@@ -17,11 +17,6 @@
     src: url(undertale-deltarune-text-font-extended.ttf);
     /* mais uma fonte customizada */
 }
-@font-face
-{
-    font-family: undertale;
-    src: url(undertale-deltarune-text-font-extended.ttf);
-}
 p, h2, h1, ul, h3
 {
     font-family: pixel3;
@@ -204,7 +199,7 @@ p, h2, h1, ul, h3
 }
 #contato
 {
-    margin-left: 83%;
+    margin-left: 79.55%;
     /* separa esse botão dos outros */
 }
 #steam
@@ -365,4 +360,36 @@ td
     height: 70px;
     width: 110%;
     /* faz o footer */
+}
+#susieimg
+{
+    margin-left: 20%;
+    align-items: center;
+    padding: 5px;
+    border: #c2c2c2 2px solid;
+    border-radius: 6px;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    /* Muda a alinhação pro centro, deixa a altura definida pela quantidade de conteúdo, mesma coisa com a largura, coloca uma borda cinza, deixa ela um pouco arredondado.*/
+}
+#susieinfo
+{
+    width: 30%;
+    margin-right: 0%;
+    /* muda o tamanho da caixa para 30% dentro de outra caixa e a margem da direita deixa 0% */
+}
+#contatod
+{
+    padding: 5px;
+    position: absolute;
+    display: none;
+    width: 30%;
+    margin-left: 33%;
+    margin-top: 15%;
+    background-color: aliceblue;
+    height: 300px;
+    font-family: pixel3;
+    border: #1d1d1d 2px solid;
+    box-shadow: 0px 0px 18px 20px #000;
 }
