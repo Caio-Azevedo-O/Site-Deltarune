@@ -26,7 +26,13 @@ var enemies2 = document.getElementById("enemiesb")
 
 var npcs2 = document.getElementById("npcb")
 
-var contato = document.getElementById("contato")
+var contato1 = document.getElementById("contato")
+
+var contatod = document.getElementById("contatod")
+
+var body1 = document.getElementsByTagName("body")
+
+var contatot = true
 
 var navbar = document.getElementById("navbar")
 
@@ -65,6 +71,30 @@ var rdef = document.getElementById("rdef")
 var rspell = document.getElementById("rspell")
 
 var ract = document.getElementById("ract")
+
+var sb1 = document.getElementById("sb1")
+
+var sb2 = document.getElementById("sb2")
+
+var sb3 = document.getElementById("sb3")
+
+var sb4 = document.getElementById("sb4")
+
+var sb5 = document.getElementById("sb5")
+
+var sb6 = document.getElementById("sb6")
+
+var smov = document.getElementById("smov")
+
+var satk = document.getElementById("satk")
+
+var sdef = document.getElementById("sdef")
+
+var spspell = document.getElementById("spspell")
+
+var suspell = document.getElementById("suspell")
+
+var sact = document.getElementById("sact")
 
 var sticky = navbar.offsetTop;
 
@@ -110,6 +140,7 @@ function kris()
     etrue = true
     nptrue = true
     kris1.style.display ="flex";
+    document.title = "Kris | Deltarune"
     ralsei1.style.display = "none";
     susie1.style.display = "none";
     noelle1.style.display = "none";
@@ -128,6 +159,7 @@ function ralsei()
     nptrue = true
     kris1.style.display = "none";
     ralsei1.style.display ="flex";
+    document.title = "Ralsei | Deltarune"
     susie1.style.display = "none";
     noelle1.style.display = "none";
     berdly1.style.display = "none";
@@ -146,6 +178,7 @@ function susie()
     kris1.style.display = "none";
     ralsei1.style.display = "none";
     susie1.style.display ="flex";
+    document.title = "Susie | Deltarune"
     noelle1.style.display = "none";
     berdly1.style.display = "none";
     enemies1.style.display = "none";
@@ -167,6 +200,7 @@ function noelle()
         ralsei1.style.display = "none";
         susie1.style.display = "none";
         noelle1.style.display ="flex";
+        document.title = "Noelle | Deltarune"
         berdly1.style.display = "none";
         enemies1.style.display = "none";
         npcs1.style.display = "none";
@@ -189,6 +223,7 @@ function berdly()
         susie1.style.display = "none";
         noelle1.style.display = "none";
         berdly1.style.display ="flex";
+        document.title = "Berdly | Deltarune"
         enemies1.style.display = "none";
         npcs1.style.display = "none";
     }
@@ -211,6 +246,7 @@ function enemies()
         noelle1.style.display = "none";
         berdly1.style.display = "none";
         enemies1.style.display ="flex";
+        document.title = "Inimigos | Deltarune"
         npcs1.style.display = "none";
     }
 }
@@ -233,6 +269,7 @@ function npcs()
         berdly1.style.display = "none";
         enemies1.style.display = "none";
         npcs1.style.display ="flex";
+        document.title = "Npcs | Deltarune"
     }
 }
 krisb.addEventListener("click", function onClick()
@@ -416,10 +453,6 @@ npcb.addEventListener("click",function onClick()
         npcb.style.color = "rgb(239, 255, 17)"
         npcb.style.borderBottomColor = "rgb(239, 255, 17)"
     }
-});
-contato.addEventListener("click", function onClick()
-{
-    window.open("contato.html")
 });
 
 function kb1()
@@ -646,3 +679,153 @@ rb5.addEventListener("click", function onClick()
     rb1.style.borderBottomColor = "rgb(0, 0, 0)"
 
 });
+function sub1()
+{
+    smov.style.display = "block";
+    satk.style.display = "none";
+    sdef.style.display = "none";
+    spspell.style.display = "none";
+    suspell.style.display = "none";
+    sact.style.display = "none";
+};
+function sub2()
+{
+    satk.style.display = "block";
+    smov.style.display = "none";
+    sdef.style.display = "none";
+    spspell.style.display = "none";
+    suspell.style.display = "none";
+    sact.style.display = "none";
+};
+function sub3()
+{
+    sdef.style.display = "block";
+    satk.style.display = "none";
+    smov.style.display = "none";
+    spspell.style.display = "none";
+    suspell.style.display = "none";
+    sact.style.display = "none";
+};
+function sub4()
+{
+    spspell.style.display = "block";
+    satk.style.display = "none";
+    sdef.style.display = "none";
+    smov.style.display = "none";
+    suspell.style.display = "none";
+    sact.style.display = "none";
+};
+function sub5()
+{
+    suspell.style.display = "block";
+    satk.style.display = "none";
+    sdef.style.display = "none";
+    spspell.style.display = "none";
+    smov.style.display = "none";
+    sact.style.display = "none";
+};
+function sub6()
+{
+    sact.style.display = "block";
+    satk.style.display = "none";
+    sdef.style.display = "none";
+    spspell.style.display = "none";
+    suspell.style.display = "none";
+    smov.style.display = "none";
+};
+sb1.addEventListener("click", function onClick()
+{
+    sb1.style.color = "rgb(239, 255, 17)"
+    sb1.style.borderBottomColor = "rgb(239, 255, 17)"
+    sb2.style.color = "rgb(36, 255, 255)"
+    sb2.style.borderBottomColor = "rgb(0, 0, 0)"
+    sb3.style.color = "rgb(36, 255, 255)"
+    sb3.style.borderBottomColor = "rgb(0, 0, 0)"
+    sb4.style.color = "rgb(36, 255, 255)"
+    sb4.style.borderBottomColor = "rgb(0, 0, 0)"
+    sb5.style.color = "rgb(36, 255, 255)"
+    sb5.style.borderBottomColor = "rgb(0, 0, 0)"
+    sb6.style.color = "rgb(36, 255, 255)"
+    sb6.style.borderBottomColor = "rgb(0, 0, 0)"
+});
+sb2.addEventListener("click", function onClick()
+{
+    sb2.style.color = "rgb(239, 255, 17)"
+    sb2.style.borderBottomColor = "rgb(239, 255, 17)"
+    sb5.style.color = "rgb(36, 255, 255)"
+    sb5.style.borderBottomColor = "rgb(0, 0, 0)"
+    sb3.style.color = "rgb(36, 255, 255)"
+    sb3.style.borderBottomColor = "rgb(0, 0, 0)"
+    sb4.style.color = "rgb(36, 255, 255)"
+    sb4.style.borderBottomColor = "rgb(0, 0, 0)"
+    sb1.style.color = "rgb(36, 255, 255)"
+    sb1.style.borderBottomColor = "rgb(0, 0, 0)"
+    sb6.style.color = "rgb(36, 255, 255)"
+    sb6.style.borderBottomColor = "rgb(0, 0, 0)"
+});
+sb3.addEventListener("click", function onClick()
+{
+    sb3.style.color = "rgb(239, 255, 17)"
+    sb3.style.borderBottomColor = "rgb(239, 255, 17)"
+    sb2.style.color = "rgb(36, 255, 255)"
+    sb2.style.borderBottomColor = "rgb(0, 0, 0)"
+    sb5.style.color = "rgb(36, 255, 255)"
+    sb5.style.borderBottomColor = "rgb(0, 0, 0)"
+    sb4.style.color = "rgb(36, 255, 255)"
+    sb4.style.borderBottomColor = "rgb(0, 0, 0)"
+    sb1.style.color = "rgb(36, 255, 255)"
+    sb1.style.borderBottomColor = "rgb(0, 0, 0)"
+    sb6.style.color = "rgb(36, 255, 255)"
+    sb6.style.borderBottomColor = "rgb(0, 0, 0)"
+});
+sb4.addEventListener("click", function onClick()
+{
+    sb4.style.color = "rgb(239, 255, 17)"
+    sb4.style.borderBottomColor = "rgb(239, 255, 17)"
+    sb2.style.color = "rgb(36, 255, 255)"
+    sb2.style.borderBottomColor = "rgb(0, 0, 0)"
+    sb3.style.color = "rgb(36, 255, 255)"
+    sb3.style.borderBottomColor = "rgb(0, 0, 0)"
+    sb5.style.color = "rgb(36, 255, 255)"
+    sb5.style.borderBottomColor = "rgb(0, 0, 0)"
+    sb1.style.color = "rgb(36, 255, 255)"
+    sb1.style.borderBottomColor = "rgb(0, 0, 0)"
+    sb6.style.color = "rgb(36, 255, 255)"
+    sb6.style.borderBottomColor = "rgb(0, 0, 0)"
+});
+sb5.addEventListener("click", function onClick()
+{
+    sb5.style.color = "rgb(239, 255, 17)"
+    sb5.style.borderBottomColor = "rgb(239, 255, 17)"
+    sb2.style.color = "rgb(36, 255, 255)"
+    sb2.style.borderBottomColor = "rgb(0, 0, 0)"
+    sb3.style.color = "rgb(36, 255, 255)"
+    sb3.style.borderBottomColor = "rgb(0, 0, 0)"
+    sb4.style.color = "rgb(36, 255, 255)"
+    sb4.style.borderBottomColor = "rgb(0, 0, 0)"
+    sb1.style.color = "rgb(36, 255, 255)"
+    sb1.style.borderBottomColor = "rgb(0, 0, 0)"
+    sb6.style.color = "rgb(36, 255, 255)"
+    sb6.style.borderBottomColor = "rgb(0, 0, 0)"
+});
+sb6.addEventListener("click", function onClick()
+{
+    sb6.style.color = "rgb(239, 255, 17)"
+    sb6.style.borderBottomColor = "rgb(239, 255, 17)"
+    sb2.style.color = "rgb(36, 255, 255)"
+    sb2.style.borderBottomColor = "rgb(0, 0, 0)"
+    sb3.style.color = "rgb(36, 255, 255)"
+    sb3.style.borderBottomColor = "rgb(0, 0, 0)"
+    sb4.style.color = "rgb(36, 255, 255)"
+    sb4.style.borderBottomColor = "rgb(0, 0, 0)"
+    sb1.style.color = "rgb(36, 255, 255)"
+    sb1.style.borderBottomColor = "rgb(0, 0, 0)"
+    sb5.style.color = "rgb(36, 255, 255)"
+    sb5.style.borderBottomColor = "rgb(0, 0, 0)"
+});
+function contato()
+{
+    contatot = false
+    contatod.style.display = "block"
+    contatod.style.position = "fixed"
+}
