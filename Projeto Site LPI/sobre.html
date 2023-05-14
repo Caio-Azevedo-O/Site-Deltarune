@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deltarune</title>
+    <title>Sobre | Deltarune</title>
     <link rel="icon" type="image/x-icon" href="Home/favicon.png">
     <link rel="stylesheet" href="Home/doc.css">
     <script src="https://kit.fontawesome.com/e5531e1bd1.js" crossorigin="anonymous"></script>
@@ -29,13 +29,29 @@
     </header>
     <nav>
         <div id="navbar">
-                <a href="home.html"><button type="button", class="button"><span><i class="fa-solid fa-house"></i></span></button></a>
-                <a href="personagem.html"><button type="button", class="button"><span>Personagem</span></button></a>
-                <a href="sobre.html"><button type="button", class="button"><span>Sobre</span></button></a>
-                <a href="contato.html"><button type="button", class="button" id="contato" onclick=""><span>Contato</span></button></a>
+                <div class="anim"><a href="home.html"><button type="button", class="button"><span><i class="fa-solid fa-house"></i></span></button></a></div>
+                <div class="anim"><a href="personagem.html"><button type="button", class="button"><span>Personagem</span></button></a></div>
+                <div class="anim"><a href="sobre.html"><button type="button", class="button"><span>Sobre</span></button></a></div>
+                <div class="anim"><a href="mecanicas.html"><button type="button", class="button"><span>Mecânicas</button></span></a></div>
+                <div class="anim"><button type="button", class="button" id="contato" onclick="contato()"><span>Contato</span></button></div>
                 <!--Codigo que conecta as outras paginas-->
             </div>
     </nav>
+    <form id="contatod">
+        <label>Nome: </label>
+        <input type="text" style="display: block;" name="Nome: ">
+        <br>
+        <label>Telefone: </label>
+        <input type="text" style="display: block;" name="Telefone: ">
+        <br>
+        <label>Email: </label>
+        <input type="text" style="display: block;" name="Email: ">
+        <br>
+        <label>Mensagem: </label>
+        <input type="text" style="display: block;" name="Mensagem: ">
+        <br>
+        <input type="submit" id="enviar" style="color: aliceblue; background-color: rgb(46, 168, 46); width: 90px; height: 30px; font-family: pixel3;">
+    </form>
     <main>
         <div id="div1sob">
             <div class="imagem"><img src="Sobre/deltarune img 1.png" width="500" style="border: medium solid aliceblue; padding: 3px;"></div>
