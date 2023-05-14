@@ -18,18 +18,31 @@
     </style>
 </head>
 <body>
+    <form id="contatod">
+        <label>Nome: </label>
+        <input type="text" style="display: block;" name="Nome: ">
+        <br>
+        <label>Telefone: </label>
+        <input type="text" style="display: block;" name="Telefone: ">
+        <br>
+        <label>Email: </label>
+        <input type="text" style="display: block;" name="Email: ">
+        <br>
+        <label>Mensagem: </label>
+        <input type="text" style="display: block;" name="Mensagem: ">
+        <br>
+        <input type="submit" id="enviar" style="color: aliceblue; background-color: rgb(46, 168, 46); width: 90px; height: 30px; font-family: pixel3;">
+    </form>
     <nav>
         <div id="navbar">
-                <a href="home.html"><button type="button", class="button"><span><i class="fa-solid fa-house"></i></span></button></a>
-                <a href="personagem.html"><button type="button", class="button"><span>Personagem</span></button></a>
-                <a href="sobre.html"><button type="button", class="button"><span>Sobre</span></button></a>
-                <a href="contato.html"><button type="button", class="button" id="contato" onclick=""><span>Contato</span></button></a>
+                <div class="anim"><a href="home.html"><button type="button", class="button"><span><i class="fa-solid fa-house"></i></span></button></a></div>
+                <div class="anim"><a href="personagem.html"><button type="button", class="button"><span>Personagem</span></button></a></div>
+                <div class="anim"><a href="sobre.html"><button type="button", class="button"><span>Sobre</span></button></a></div>
+                <div class="anim"><a href="mecanicas.html"><button type="button", class="button"><span>Mecânicas</button></span></a></div>
+                <div class="anim"><button type="button", class="button" id="contato" onclick="contato()"><span>Contato</span></button></div>
                 <!--Codigo que conecta as outras paginas-->
             </div>
     </nav>
-    <form>
-        
-    </form>
     <script src="scripts.js"></script>
 </body>
 </html>
