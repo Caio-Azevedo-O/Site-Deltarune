@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deltarune</title>
+    <title>Personagem | Deltarune</title>
     <link rel="icon" type="image/x-icon" href="Home/favicon.png">
     <link rel="stylesheet" href="Home/doc.css">
     <script src="https://kit.fontawesome.com/e5531e1bd1.js" crossorigin="anonymous"></script>
@@ -14,13 +14,13 @@
             background-image: url(Personagem/back\ img.png);
             /*Coloca uma imagem no fundo do site*/
         }
-        #krisb, #kb1, #movr, #movs, #movn, #movb, #move, #movnpc, #rb1
+        #krisb, #kb1, #movr, #movs, #movn, #movb, #move, #movnpc, #rb1, #sb1
         {
             color: rgb(239, 255, 17);
             border-bottom: 2px solid rgb(239, 255, 17);
             /* Deixa a cor padrão quando você entra no site do botão kris */
         }
-        #ralseib, #susieb, #noelleb, #berdlyb, #enemiesb, #npcb, #kb2, #kb3, #kb4, #rb2, #rb3, #rb4, #rb5
+        #ralseib, #susieb, #noelleb, #berdlyb, #enemiesb, #npcb, #kb2, #kb3, #kb4, #rb2, #rb3, #rb4, #rb5, #sb2, #sb3, #sb4, #sb5, #sb6
         {
             color: rgb(36, 255, 255);
             border-bottom: 2px solid rgb(0, 0, 0);
@@ -37,13 +37,29 @@
     </header>
     <nav>
         <div id="navbar">
-            <a href="home.html"><button type="button", class="button"><span><i class="fa-solid fa-house"></i></span></button></a>
-            <a href="personagem.html"><button type="button", class="button"><span>Personagem</span></button></a>
-            <a href="sobre.html"><button type="button", class="button"><span>Sobre</span></button></a>
-            <a href="contato.html"><button type="button", class="button" id="contato" onclick=""><span>Contato</span></button></a>
-            <!--Codigo que conecta as outras paginas-->
-        </div>
+                <div class="anim"><a href="home.html"><button type="button", class="button"><span><i class="fa-solid fa-house"></i></span></button></a></div>
+                <div class="anim"><a href="personagem.html"><button type="button", class="button"><span>Personagem</span></button></a></div>
+                <div class="anim"><a href="sobre.html"><button type="button", class="button"><span>Sobre</span></button></a></div>
+                <div class="anim"><a href="mecanicas.html"><button type="button", class="button"><span>Mecânicas</button></span></a></div>
+                <div class="anim"><button type="button", class="button" id="contato" onclick="contato()"><span>Contato</span></button></div>
+                <!--Codigo que conecta as outras paginas-->
+            </div>
     </nav>
+    <form id="contatod">
+        <label>Nome: </label>
+        <input type="text" style="display: block;" name="Nome: ">
+        <br>
+        <label>Telefone: </label>
+        <input type="text" style="display: block;" name="Telefone: ">
+        <br>
+        <label>Email: </label>
+        <input type="text" style="display: block;" name="Email: ">
+        <br>
+        <label>Mensagem: </label>
+        <input type="text" style="display: block;" name="Mensagem: ">
+        <br>
+        <input type="submit" id="enviar" style="color: aliceblue; background-color: rgb(46, 168, 46); width: 90px; height: 30px; font-family: pixel3;">
+    </form>
     <main>
         <div id="Sprites_e_Info">
             <button onclick="kris()" type="button" class="butao2" id="krisb">Kris</button>
@@ -282,7 +298,7 @@
                     </p>
                 </div>
                 <div id="ralseiimg">
-                    <div id="RIN">
+                    <div id="KIN">
                         Ralsei
                     </div>
                     <div id="spritesr">
@@ -312,7 +328,7 @@
                     <div style="width: fit-content; display: none;" id="ract">
                         <img src="Personagem/ralseiact.gif" width="300px">
                     </div>
-                    <div id="RII">
+                    <div id="KII">
                         Info
                     </div>
                     <h3 style="border-bottom: #363636 2px solid;">
@@ -339,7 +355,122 @@
                 <!-- Sprites, moveset e alguma info sobre ele -->
             </div>
             <div id="susiehs" style="display: none;">
-                <img src="Personagem/susiesprite.gif" width="300px">
+                <div id="susieinfo">
+                    <h1>Susie</h1>
+                    <br>
+                    <br>
+                    <p>
+                        Susie é uma Lightner monstro dinossauro de pele roxa, que é colega de Kris na escola e sua amiga. faz parte da profecia da deltarune.
+                        <br>Susie usa um machado no Dark World, e tem uma gameplay de dano alto e HP alto.
+                    </p>
+                    <h2>História</h2>
+                    <p>Susie mora em Hometown e estuda na mesma classe que kris. Como ela gosta de confusão, ela está bem próxima de ser expulsa.<br>Sabe-se muito pouco sobre a história dela antes de se iniciar o jogo.</p>
+                    <h2>Combate</h2>
+                    <h3>Status</h3>
+                    <table>
+                        <theader>
+                            <tr>
+                                <th>LV</th>
+                                <th>HP</th>
+                                <th>Ataque</th>
+                                <th>Defesa</th>
+                                <th>Magia</th>
+                                <th>Guts</th>
+                            </tr>
+                        </theader>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>110</td>
+                                <td>14</td>
+                                <td>2</td>
+                                <td>1</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>140</td>
+                                <td>16</td>
+                                <td>2</td>
+                                <td>1</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>190</td>
+                                <td>18-19</td>
+                                <td>2</td>
+                                <td>3-4</td>
+                                <td>2</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h3>Feitiços</h3>
+                    <p>A magia de Susie é a buster magic, que foca principalmente em ataques extremamente fortes e úteis na batalha. Você pode aumentar o dano do feitiço se você segurar [CONFIRM] quando a animação começar.</p>
+                    <ul>
+                        <li>Rude Buster</li>
+                        <p>50% de TP, ou 40% se o item Devilsknife estiver equipado. Um ataque que geralmente da mais dano que o comando <button type="button" id="agir">FIGHT</button>, na forma de "Dano Rude".</p>
+                        <li>Red Buster</li>
+                        <p>60% de TP. Pode ser usado apenas pelo comando <button type="button" id="agir">ACT</button> de Kris durante a batalha do King e da Queen. Da significantemente mais dano do que o 
+                            comando <button type="button" id="agir">FIGHT</button>. Diferentemente de Rude Buster, ele da o tipo de dano "Dano Vermelho".</p>
+                        <li>S-Action</li>
+                        <p>Não custa TP. Susie faz a ação selecionada de Kris, em um inimigo diferente. Em algumas batalhas será substituido com alguma ação de kris, como "Bump" na batalha contra berdly, e "Snap" na batalha contra Spamton NEO. Susie pode aprender durante a batalha contra Sweet Cap'n Cakes.</p>
+                        <li>UltimateHeal</li>
+                        <p>100% de TP. Uma cura ineficiente, que não cura quase nada da vida do aliado, pois susie "Ataca" com a magia de cura. pode ter algum outro funcionamento no futuro.</p>
+                        <li>Supercharge</li>
+                        <p>32% de TP. Disponível apenas na batalha de Spamton NEO, o feitiço aumenta a velocidade do tiro carregado da alma amarela, e diminui o tempo que demora para carregar.</p>
+                    </ul>
+                </div>
+                <div id="susieimg">
+                    <div id="KIN">Susie</div>
+                    <div id="spritesr">
+                        <button onclick="sub1()" type="button" class="butao2" id="sb1">Movimento</button>
+                        <button onclick="sub2()" type="button" class="butao2" id="sb2">Atacando</button>
+                        <button onclick="sub3()" type="button" class="butao2" id="sb3">Defendendo</button>
+                        <button onclick="sub4()" type="button" class="butao2" id="sb4">P-Feitiço</button>
+                        <button onclick="sub5()" type="button" class="butao2" id="sb5">U-Feitiço</button>
+                        <button onclick="sub6()" type="button" class="butao2" id="sb6">S-Action</button>
+                    </div>
+                    <div id="smov" style="display: block;">
+                        <img src="Personagem/susiesprite.gif" width="300px">
+                    </div>
+                    <div id="satk" style="display: none">
+                        <img src="Personagem/susieatk.gif" width="300px">
+                    </div>
+                    <div id="sdef" style="display: none">
+                        <img src="Personagem/susiedef.gif" width="300px">
+                    </div>
+                    <div id="spspell" style="display: none">
+                        <img src="Personagem/susiepspell.gif" width="300px">
+                    </div>
+                    <div id="suspell" style="display: none">
+                        <img src="Personagem/susieuspell.gif" width="300px">
+                    </div>
+                    <div id="sact" style="display: none">
+                        <img src="Personagem/susieact.gif" width="300px">
+                    </div>
+                    <div id="KII">Info</div>
+                    <h3 style="border-bottom: #363636 2px solid;">
+                        Primeira aparição
+                    </h3>
+                    <p>Hometown</p>
+                    <h3 style="border-bottom: #363636 2px solid;">
+                        Relações
+                    </h3>
+                    <p>
+                        Kris (amigo, colega de time,<br> colega de classe, antigo inimigo)
+                        <br>
+                        Ralsei (amigo, colega de time,<br> antigo inimigo.)
+                        <br>
+                        Lancer (amigo, aliado,<br> antigo inimigo.)
+                        <br>
+                        Noelle (amiga, aliada,<br> colega de classe.)
+                        <br>
+                        Alphys (professora)
+                        <br>
+                        Berdly (aliado, colega de classe,<br> antigo inimigo.)
+                    </p>
+                </div>
                 <!-- Sprites, moveset e alguma info sobre ele -->
             </div>
             <div id="noellehs" style="display: none;">
