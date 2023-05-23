@@ -17,6 +17,11 @@
     src: url(undertale-deltarune-text-font-extended.ttf);
     /* mais uma fonte customizada */
 }
+::selection
+{
+    color: #000;
+    background-color: cyan;
+}
 p, h2, h1, ul, h3
 {
     font-family: pixel3;
@@ -398,4 +403,21 @@ td
 #spritesr
 {
     width: 170%;
+}
+#noelleinfo
+{
+    width: 30%;
+    margin-right: 0%;
+}
+#noelleimg
+{
+    margin-left: 20%;
+    align-items: center;
+    padding: 5px;
+    border: #c2c2c2 2px solid;
+    border-radius: 6px;
+    width: 24%;
+    height: fit-content;
+    text-align: center;
+    overflow-x: scroll;
 }
